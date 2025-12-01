@@ -1,89 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <link rel="preconnect" href="https://fonts.googleapis.com"/>
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet"/>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./css/style.css" />
     <title>Bicicleteria</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <div class="div-log"><a class="logo" href="./index.html"><img src="img/logo1.jpg"></a></div>
-        <nav class="header-nav">
-            <ul>
-                <li><a href="./index.html">Inicio</a></li>
-                <li><a href="./page/contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
+      <div class="div-log">
+        <a class="logo" href="./index.html"><img src="img/logo1.jpg" /></a>
+      </div>
+      <nav class="header-nav">
+        <ul>
+          <li><a href="./index.html">Inicio</a></li>
+          <li><a href="./page/contacto.html">Contacto</a></li>
+          <li>
+            <a href="./page/carrito.html" class="carrito-icono">
+              🛒<span id="contador-carrito">0</span></a
+            >
+          </li>
+        </ul>
+      </nav>
     </header>
 
     <main>
-    <h1 class="titulo-home"> Bienvenidos a la Bicicleteria</h1>
-    <p class="parrafo">
-Bienvenidos a nuestra Bicicletería
-En nuestra tienda vas a encontrar mucho más que bicicletas: vas a encontrar pasión por pedalear.
-Ofrecemos una amplia variedad de modelos para todos los estilos —de montaña, urbanas, de ruta y para paseo— junto con los mejores accesorios y repuestos.
+      <h1 class="titulo-home">Bienvenidos a la Bicicleteria</h1>
+      <p class="parrafo">
+        Bienvenidos a nuestra Bicicletería En nuestra tienda vas a encontrar
+        mucho más que bicicletas: vas a encontrar pasión por pedalear. Ofrecemos
+        una amplia variedad de modelos para todos los estilos —de montaña,
+        urbanas, de ruta y para paseo— junto con los mejores accesorios y
+        repuestos. Nos destacamos por brindar atención personalizada,
+        asesoramiento técnico y productos de calidad pensados para que disfrutes
+        cada kilómetro. Tanto si estás comenzando en el mundo del ciclismo como
+        si sos un ciclista experimentado, tenemos la bici ideal para vos.
+      </p>
 
-Nos destacamos por brindar atención personalizada, asesoramiento técnico y productos de calidad pensados para que disfrutes cada kilómetro.
-Tanto si estás comenzando en el mundo del ciclismo como si sos un ciclista experimentado, tenemos la bici ideal para vos.
-    </p>
-    
-    <section>
+      <section>
         <h2 class="titulo-producto">Algunos de nuestros productos</h2>
-        <div class="contenedor-tarjetas">
-            <article class="card">
-                <img    
-                    src="./img/bici2.jpg" 
-                    alt="Bici Ciudad"
-                />
-                <h3>Ciudad</h3>
-                <p>Precio: $100000</p>
-                <button class="btn">Agregar al carrito</button>
-            </article>
-
-            <article class="card">
-                <img    
-                    src="./img/bici3.jpg" 
-                    alt="Bici montaña"
-                />
-                <h3>Montaña</h3>
-                <p>Precio: $100000</p>
-                <button class="btn">Agregar al carrito</button>
-            </article>
-
-            <article class="card">
-                <img    
-                    src="./img/bic4.jpg" 
-                    alt="Bici Ruta"
-                />
-                <h3>Ruta</h3>
-                <p>Precio: $100000</p>
-                <button class="btn">Agregar al carrito</button>
-            </article> 
-
-            <article class="card">
-                <img    
-                    src="./img/bici1.jpg" 
-                    alt="Bici montaña"
-                />
-                <h3>Montaña Plus</h3>
-                <p>Precio: $100000</p>
-                <button class="btn">Agregar al carrito</button>
-            </article>                       
-        </div>
-    </section>
+        <div id="contenedor-tarjetas" class="contenedor-tarjetas"></div>
+      </section>
     </main>
     <footer>
-        <p>Sitio realizado por Nico para TT</p>
-        <nav>
-            <ul>
-                <li><a href="">Instagram</a></li>
-                <li><a href="">Whatsapp</a></li>
-            </ul>
-        </nav>
+      <p>Sitio realizado por Nico para TT</p>
+      <nav>
+        <ul>
+          <li><a href="">Instagram</a></li>
+          <li><a href="">Whatsapp</a></li>
+        </ul>
+      </nav>
     </footer>
-</body>
+    <script src="./js/index.js" type="module"></script>
+  </body>
 </html>
